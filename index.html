@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineReview — Movie Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">🎬 CineReview</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#top">Top Picks</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="badge">☁️ Hosted on AWS EC2</span>
+      <h1>Your Ultimate<br/><span class="highlight">Movie Review</span><br/>Destination</h1>
+      <p>Honest reviews, top picks, and cinematic insights — all served from an AWS EC2 instance running Nginx.</p>
+      <a href="#reviews" class="btn btn-primary">Browse Reviews</a>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <h2 class="section-title">Latest Reviews</h2>
+    <div class="reviews-grid">
+
+      <div class="movie-card">
+        <div class="movie-poster" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+          <div class="poster-icon">🎥</div>
+        </div>
+        <div class="movie-info">
+          <div class="movie-meta"><span class="genre-tag">Sci-Fi</span><span class="year">2023</span></div>
+          <h3>Oppenheimer</h3>
+          <div class="stars">★★★★★</div>
+          <p>A breathtaking historical epic that redefines what cinema can achieve. Nolan at his absolute peak.</p>
+          <a href="review.html" class="read-more">Read Full Review →</a>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <div class="movie-poster" style="background:linear-gradient(135deg,#2d1b4e,#11002f)">
+          <div class="poster-icon">🌌</div>
+        </div>
+        <div class="movie-info">
+          <div class="movie-meta"><span class="genre-tag">Drama</span><span class="year">2023</span></div>
+          <h3>Dune: Part Two</h3>
+          <div class="stars">★★★★☆</div>
+          <p>A visually stunning sequel with incredible world-building and unforgettable performances.</p>
+          <a href="review.html" class="read-more">Read Full Review →</a>
+        </div>
+      </div>
+
+      <div class="movie-card">
+        <div class="movie-poster" style="background:linear-gradient(135deg,#1e3a1e,#0a1f0a)">
+          <div class="poster-icon">🦁</div>
+        </div>
+        <div class="movie-info">
+          <div class="movie-meta"><span class="genre-tag">Action</span><span class="year">2024</span></div>
+          <h3>Gladiator II</h3>
+          <div class="stars">★★★☆☆</div>
+          <p>A solid action spectacle with impressive visuals, though it doesn't quite match the original.</p>
+          <a href="review.html" class="read-more">Read Full Review →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TOP PICKS -->
+  <section class="section dark-section" id="top">
+    <h2 class="section-title">Top Picks</h2>
+    <div class="top-list">
+      <div class="top-item"><span class="top-rank">#1</span><div class="top-details"><h3>The Shawshank Redemption</h3><span class="genre-tag">Drama</span></div><div class="top-score">9.3</div></div>
+      <div class="top-item"><span class="top-rank">#2</span><div class="top-details"><h3>The Dark Knight</h3><span class="genre-tag">Action</span></div><div class="top-score">9.0</div></div>
+      <div class="top-item"><span class="top-rank">#3</span><div class="top-details"><h3>Inception</h3><span class="genre-tag">Sci-Fi</span></div><div class="top-score">8.8</div></div>
+      <div class="top-item"><span class="top-rank">#4</span><div class="top-details"><h3>Interstellar</h3><span class="genre-tag">Sci-Fi</span></div><div class="top-score">8.6</div></div>
+      <div class="top-item"><span class="top-rank">#5</span><div class="top-details"><h3>Parasite</h3><span class="genre-tag">Thriller</span></div><div class="top-score">8.5</div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="section-title">About This Project</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🖥️</div>
+        <h3>AWS EC2</h3>
+        <p>This site runs on an Amazon EC2 (Ubuntu) instance — a real virtual server in the cloud.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">⚙️</div>
+        <h3>Nginx Web Server</h3>
+        <p>Nginx is installed on EC2 to serve the static HTML/CSS/JS files to the browser.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🔐</div>
+        <h3>Security Group</h3>
+        <p>AWS Security Group configured to allow HTTP (port 80) and SSH (port 22) inbound traffic.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">🎬 CineReview</div>
+      <p>Built with HTML/CSS/JS · Served via <strong>Nginx</strong> on <strong>AWS EC2</strong> · 2025</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
